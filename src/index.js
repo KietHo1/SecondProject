@@ -15,3 +15,32 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+/*=============== SHOW MENU ===============*/
+
+
+/*=============== REMOVE MENU MOBILE ===============*/
+
+
+/*=============== SWIPER PROJECTS ===============*/
+
+
+/*=============== SWIPER TESTIMONIAL ===============*/
+
+
+/*=============== EMAIL JS ===============*/
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+
+/*=============== SHOW SCROLL UP ===============*/ 
+
+
+/*=============== DARK LIGHT THEME ===============*/ 
+
+
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
