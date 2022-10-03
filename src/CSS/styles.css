@@ -100,12 +100,137 @@ img{
 ==========*/
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 2.5rem;
+
+}
+
+.section_border {
+  border-bottom: 1px solid var(--title-color);
+  padding-bottom: 3.5rem;
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+.section_title{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: .25rem;
+}
+
+.section_subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 3rem;
+}
+
+.main{
+  overflow: hidden; /* For animations */
+}
 
 /*=============== HEADER & NAV ===============*/
+.header{
+  width: 100%;
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
+  z-index: var(--z-fixed); 
+}
 
+.nav{
+  height: calc(var(--header-height) + .5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--body-color);
+  box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+  padding-inline: 1.5rem;
+  border-radius: 3rem;
+}
+
+.nav_logo,
+.nav_toggle,
+.nav_close{
+  color: var(--title-color);
+}
+
+.nav_logo{
+  font-family: var(--title-font);
+  font-weight: var(--font-medium);
+}
+
+.nav_toggle{
+  display: flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px){
+  .nav_menu {
+    position: fixed;
+    width: 88%;
+    left: 0;
+    right: 0;
+    bottom: -60%;
+    margin: 0 auto;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    padding: 2rem 1.5rem 5rem;
+    border-radius: 2rem;
+    transition: bottom .3s;
+  }
+
+  .nav_list{
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    gap: 2rem 3rem; 
+  }
+
+  .nav_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .25rem;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    transition: color .3s;
+  }
+
+  .nav_link:hover{
+    color: var(--title-color);
+  }
+
+  .nav_link i{
+    font-size: 1.25rem;
+  }
+
+  .nav_close{
+    position: absolute;
+    right: 1.5rem;
+    bottom: .7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
 
 /* Show menu */
-
+.show_menu {
+  bottom: 2rem;
+}
 
 /* Active link */
 
