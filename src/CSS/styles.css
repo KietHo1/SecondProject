@@ -481,9 +481,71 @@ img{
 }
 
 /*=============== SERVICES ===============*/
+.services_container{
+  row-gap: 2.5rem;
+  justify-content: center;
+}
 
+.services_card{
+  position: relative;
+  width: 228px;
+  height: 322px;
+  background-color: var(--container-color);
+  text-align: center;
+  padding: 3.5rem 1rem;
+  border-radius: 7.25rem;
+}
+
+.services_card i{
+  display: block;
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
+  transition: transform .8s;
+}
+
+.services_title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1.5rem;
+}
+
+.services_border{
+  width: 248px;
+  height: 342px;
+  border: 1.8px solid var(--text-color-light);
+  border-radius: 7.75rem;
+  position: absolute;
+  inset: 0;
+  left: -10px;
+  margin: auto;
+  z-index: -1;
+  transition: opacity 0.6s;
+  opacity: 0;
+}
+
+.services_card:hover i{
+  transform: rotateY(360deg); 
+}
+
+.services_card:hover .services_border{
+  opacity: 1;
+}
 
 /*=============== PROJECTS ===============*/
+.projects_container{
+  overflow: initial;
+}
+
+.projects_content{
+  display: grid;
+  justify-content: center;
+}
+
+.projects_img{
+  width: 250px;
+  
+}
 
 /* Swiper class */
 
