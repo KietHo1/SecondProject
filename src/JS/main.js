@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+import 'swiper/css';
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -37,3 +39,19 @@ const scrollHeader = () =>{
                        : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+/*=============== SWIPER PROJECTS ===============*/
+/*=============== NEW SWIPER ===============*/
+let swiperProjects = new Swiper(".projects_container", {
+    spaceBetween: 24,
+    loop: 'true',
+
+    navigation:{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination:{
+        el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+});
