@@ -52,6 +52,15 @@ let swiperProjects = new Swiper(".projects_container", {
     pagination:{
         el: ".swiper-pagination",
     },
-    mousewheel: true,
-    keyboard: true,
+     breakpoints: {
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+    },
 });
