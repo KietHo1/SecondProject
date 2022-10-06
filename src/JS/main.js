@@ -73,3 +73,46 @@ let swiperTestimonial = new Swiper(".testimonial_container",{
         prevEl: ".swiper-button-prev",
     },
 });
+
+/*======================= EMAIL JS ========================*/
+const contactForm = document.createElementById('contact-form'),
+    contactName = document.createElementById('contact-name'),
+    contactEmail = document.createElementById('contact-email'),
+    contactProject = document.createElementById('contact-project'),
+    contactMessage = document.createElementById('contact_message')
+
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    // Check if the field has a value
+    if(contactName.value === '' || contactName.value === '' || contactName.value === '') {
+        // Add and remove color
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red')
+
+        // Show message
+        contactMessage.textContent = 'Write all the input fields ❎'
+    }else{
+        // ServiceID - templateID - #form - publicKey
+        emailjs.sendForm('service_1apzbdv', 'template_5duy3t6', '#contact-form', 'YeYApmSrnDdFg1Xx2')
+            .then(() => {
+                // Show message and add color
+                contactMessage.classList.add('color-blue')
+                contactMessage.textContent = 'Message sent ✅'
+
+                // Remove message after five seconds
+                setTimeout(() => {
+                    contactMessage.textContent = ''
+                }, 5000)
+            }, (error) => {
+                alert('OOPS! SOMETHING HAS FAILED...', error)
+            })
+
+        // To clear the input field
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
+    }
+}
+
+contactForm.addEventListener('submit', sendEmail);

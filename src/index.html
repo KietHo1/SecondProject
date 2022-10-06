@@ -105,15 +105,15 @@
                     </div>
 
                     <ul class="home_social">
-                        <a href="https://www.linkedin.com/" target="" class="home_social-link">
+                        <a href="https://www.linkedin.com/" title="linkedin" target="#" class="home_social-link">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
 
-                        <a href="https://github.com/" target="" class="home_social-link">
+                        <a href="https://github.com/" title="github" target="#" class="home_social-link">
                             <i class="ri-github-line"></i>
                         </a>
 
-                        <a href="https://dribbble.com/" target="" class="home_social-link">
+                        <a href="https://dribbble.com/" title="dribbble" target="#" class="home_social-link">
                             <i class="ri-dribbble-line"></i>
                         </a>
                     </ul>
@@ -625,7 +625,7 @@
                                 <span class="contact_data-info">@chris.fb123</span>
                                 <!-- Insert your brand name or profile -->
                                 <a href="https://m.me/bedimcode" target="#" class="contact_button">
-                                    Write me
+                                    Write me <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
                         </div>
@@ -652,6 +652,8 @@
                                 <textarea name="user-project" placeholder="Write your project" id="contact-project" class="contact_form-input"></textarea>
                             </div>
 
+                            <p class="contact_message" id="contact-message"></p>
+
                             <button type="submit" class="contact_button">
                                 Submit <i class="ri-arrow-right-up-line"></i>
                             </button>
@@ -677,9 +679,9 @@
         <script src="js/swiper-bundle.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
-        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
