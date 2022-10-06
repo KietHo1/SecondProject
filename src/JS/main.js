@@ -40,7 +40,6 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 /*=============== SWIPER PROJECTS ===============*/
-/*=============== NEW SWIPER ===============*/
 let swiperProjects = new Swiper(".projects_container", {
     spaceBetween: 24,
     loop: 'true',
@@ -62,5 +61,15 @@ let swiperProjects = new Swiper(".projects_container", {
         1024: {
           slidesPerView: 4,
         },
+    },
+});
+
+/*=============== SWIPER TESTIMONIAL ===============*/
+let swiperTestimonial = new Swiper(".testimonial_container",{
+    grabCursor: true,
+    
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });

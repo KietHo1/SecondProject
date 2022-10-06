@@ -654,7 +654,37 @@ img{
 }
 
 /* Swiper class */
+.testimonial_container .swiper-slide{
+  margin-bottom: 4rem;
+}
 
+.testimonial_container .swiper-button-prev::after,
+.testimonial_container .swiper-button-next::after{
+  content: '';
+}
+
+.testimonial_container .swiper-button-prev,
+.testimonial_container .swiper-button-next{
+  font-size: 2rem;
+  color: var(--title-color);
+  width: initial;
+  height: initial;
+  top: initial;
+  bottom: .5rem;
+}
+
+.testimonial_container .swiper-button-prev{
+  left: calc(50% - 3rem);
+}
+
+.testimonial_container .swiper-button-next{
+  right: calc(50% - 3rem);
+}
+
+.testimonial_container .swiper-button-disabled{
+  opacity: initial;
+  color: var(--text-color-light);
+}
 
 /*=============== CONTACT ===============*/
 

@@ -581,8 +581,13 @@
                         </div>
 
                         <!-- Swiper arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -591,7 +596,68 @@
 
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
-                
+                <h2 class="section_title">Contact Me</h2>
+                <span class="section_subtitle">Get in touch</span>
+
+                <div class="contact_container container grid section_border">
+                    <div class="contact_content">
+                        <h3 class="contact_title">
+                            <i class="ri-chat-3-line"></i> Talk to me
+                        </h3>
+
+                        <div class="contact_info">
+                            <div class="contact_data">
+                                <span class="contact_data-title">Email</span>
+                                <span class="contact_data-info">chrismayer@email.com</span>
+                            </div>
+
+                            <div class="contact_data">
+                                <span class="contact_data-title">Whatsapp</span>
+                                <span class="contact_data-info">+51 9876543210</span>
+                                <!-- Insert a real number plus country code -->
+                                <a href="https://api.whatsapp.com/send?phone=5519876543210&text=Hello, more information!" target="#" class="contact_button">
+                                    Write me <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact_data">
+                                <span class="contact_data-title">Messenger</span>
+                                <span class="contact_data-info">@chris.fb123</span>
+                                <!-- Insert your brand name or profile -->
+                                <a href="https://m.me/bedimcode" target="#" class="contact_button">
+                                    Write me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact_content">
+                        <h3 class="contact_title">
+                            <i class="ri-send-plane-line"></i> Write me your project
+                        </h3>
+
+                        <form action="" class="contact_form" id="contact-form">
+                            <div class="contact_form-div">
+                                <label class="contact_form-tag">Names</label>
+                                <input type="text" name="user_name" required placeholder="Write your name" class="contact_form-input" id="contact-name">
+                            </div>
+
+                            <div class="contact_form-div">
+                                <label class="contact_form-tag">Mail</label>
+                                <input type="email" name="user_email" required placeholder="Write your email" class="contact_form-input" id="contact-email">
+                            </div>
+
+                            <div class="contact_form-div contact_form-area">
+                                <label class="contact_form-tag">Project</label>
+                                <textarea name="user-project" placeholder="Write your project" id="contact-project" class="contact_form-input"></textarea>
+                            </div>
+
+                            <button type="submit" class="contact_button">
+                                Submit <i class="ri-arrow-right-up-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
 
