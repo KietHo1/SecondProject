@@ -687,7 +687,58 @@ img{
 }
 
 /*=============== CONTACT ===============*/
+.contact_container{
+  row-gap: 3.5rem;
+}
 
+.contact_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+
+.contact_title i{
+  font-size: 1rem;
+  font-weight: initial;
+}
+
+.contact_info,
+.contact_data,
+.contact_form{
+  display: grid;
+}
+
+.contact_info{
+  row-gap: 2rem;
+}
+
+.contact_data{
+  row-gap: .75rem;
+}
+
+.contact_data-title{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact_data-info{
+  font-size: var(--small-font-size);
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
+
+.contact_button{
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
 
 /* Status color */
 
