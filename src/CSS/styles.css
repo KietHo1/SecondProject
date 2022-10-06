@@ -69,6 +69,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background .4s; /* For dark mode animation */
 }
 
 h1, h2, h3{
@@ -211,6 +212,7 @@ body.dark-theme{
   box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
   padding-inline: 1.5rem;
   border-radius: 3rem;
+  transition: background .4s; /* For dark mode animation */
 }
 
 .nav_logo,
@@ -315,6 +317,7 @@ body.dark-theme{
   justify-self: center;
   border-radius: 6.25rem;
   place-items: center;
+  transition: background .4s; /* For dark mode animation */
 }
 
 .home_perfil{
@@ -440,6 +443,7 @@ body.dark-theme{
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
+  transition: background .4s; /* For dark mode animation */
 }
 
 .skills_blob img{
@@ -547,6 +551,7 @@ body.dark-theme{
   text-align: center;
   padding: 3.5rem 1rem;
   border-radius: 7.25rem;
+  transition: background .4s; /* For dark mode animation */
 }
 
 .services_card i{
@@ -839,6 +844,7 @@ body.dark-theme{
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   padding: .35rem;
+  transition: background .4s; /* For dark mode animation */
 }
 
 .contact_form-area {
