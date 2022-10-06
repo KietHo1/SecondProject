@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css';
+import emailjs from '@emailjs/browser';
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
