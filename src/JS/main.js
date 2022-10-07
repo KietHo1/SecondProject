@@ -187,4 +187,8 @@ const sr = ScrollReveal({
     // reset: true /* Animations repeat */
 })
 
-sr.reveal('.home_data')
+sr.reveal('.home_data, .projects_container, .testimonial_container, .footer_container')
+sr.reveal('.home_info div', {delay: 600, origin: 'bottom', interval: 100})
+sr.reveal('.skills_content:nth-child(1), .contact_content:nth-child(1)', {origin: 'left'})
+sr.reveal('.skills_content:nth-child(2), .contact_content:nth-child(2)', {origin: 'right'})
+sr.reveal('.qualification_content, .services_card', {interval: 100})    
