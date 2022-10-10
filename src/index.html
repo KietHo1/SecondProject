@@ -1,733 +1,784 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="css/styles.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-        <title>Responsive portfolio website Chris - Bedimcode</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-           <nav class="nav container">
-            <a href="#" class="nav_logo">
-                Chris
-            </a>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class="ri-home-5-line"></i> Home
-                        </a>
-                    </li>
+    <title>Responsive portfolio website Chris - Bedimcode</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"> Chris </a>
 
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">
-                            <i class="ri-trophy-line"></i> Skills
-                        </a>
-                    </li>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link">
+                <i class="ri-home-5-line"></i> Home
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#qualification" class="nav_link">
-                            <i class="ri-book-open-line"></i> Qualification
-                        </a>
-                    </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">
+                <i class="ri-trophy-line"></i> Skills
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#services" class="nav_link">
-                            <i class="ri-briefcase-line"></i> Services
-                        </a>
-                    </li>
+            <li class="nav_item">
+              <a href="#qualification" class="nav_link">
+                <i class="ri-book-open-line"></i> Qualification
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#project" class="nav_link">
-                            <i class="ri-image-line"></i> Projects
-                        </a>
-                    </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">
+                <i class="ri-briefcase-line"></i> Services
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">
-                            <i class="ri-chat-3-line"></i> Contact
-                        </a>
-                    </li>
-                </ul>
+            <li class="nav_item">
+              <a href="#project" class="nav_link">
+                <i class="ri-image-line"></i> Projects
+              </a>
+            </li>
 
-                <!-- Close button -->
-                <div class="nav_close" id="nav_close">
-                    <i class="ri-close-line"></i>
-                </div>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="ri-chat-3-line"></i> Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav_close" id="nav_close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav_buttons">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav_toggle" id="nav_toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home_container container grid section_border">
+          <div class="home_data grid">
+            <h1 class="home_title">
+              Hi, I'm Chris <br />
+              Frontend Developer <br />
+              Based in Peru <br />
+            </h1>
+
+            <div class="home_blob grid">
+              <div class="home_perfil">
+                <img src="img/perfil.png" alt="home perfil" />
+              </div>
+
+              <img
+                src="assets/img/shape-wawes.svg"
+                alt=""
+                class="home_shape-waves"
+              />
+              <img
+                src="img/shape-circle.svg"
+                alt=""
+                class="home_shape-circle"
+              />
             </div>
 
-            <div class="nav_buttons">
-                <!-- Theme change button -->
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
-                
-                <!-- Toggle button -->
-                <div class="nav_toggle" id="nav_toggle">
-                    <i class="ri-menu-4-line"></i>
-                </div>
+            <ul class="home_social">
+              <a
+                href="https://www.linkedin.com/"
+                title="linkedin"
+                target="#"
+                class="home_social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+
+              <a
+                href="https://github.com/"
+                title="github"
+                target="#"
+                class="home_social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+
+              <a
+                href="https://dribbble.com/"
+                title="dribbble"
+                target="#"
+                class="home_social-link"
+              >
+                <i class="ri-dribbble-line"></i>
+              </a>
+            </ul>
+          </div>
+
+          <!--============================HOME INFO 1============================= -->
+          <div class="home_info">
+            <div>
+              <h3 class="home_info-title">BIOGRAPHY</h3>
+
+              <p class="home_info-description">
+                Hi, I'm Chris, Frontend Developer. Passionate about designing
+                beautiful web interfaces. Based in Peru
+              </p>
             </div>
-           </nav> 
-        </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-               <div class="home_container container grid section_border">
-                <div class="home_data grid">
-                    <h1 class="home_title">
-                        Hi, I'm Chris <br>
-                        Frontend Developer <br>
-                        Based in Peru <br>
-                    </h1>
+            <div>
+              <h3 class="home_info-title">CONTACT</h3>
 
-                    <div class="home_blob grid">
-                        <div class="home_perfil">
-                            <img src="img/perfil.png" alt="home perfil">
-                        </div>
-
-                        <img src="assets/img/shape-wawes.svg" alt="" class="home_shape-waves"> 
-                        <img src="img/shape-circle.svg" alt="" class="home_shape-circle">
-                    </div>
-
-                    <ul class="home_social">
-                        <a href="https://www.linkedin.com/" title="linkedin" target="#" class="home_social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-
-                        <a href="https://github.com/" title="github" target="#" class="home_social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-
-                        <a href="https://dribbble.com/" title="dribbble" target="#" class="home_social-link">
-                            <i class="ri-dribbble-line"></i>
-                        </a>
-                    </ul>
-                </div>
-
-                <!--============================HOME INFO 1============================= -->
-                <div class="home_info">
-                    <div>
-                        <h3 class="home_info-title">
-                            BIOGRAPHY
-                        </h3>
-
-                        <p class="home_info-description">
-                            Hi, I'm Chris, Frontend Developer.
-                            Passionate about designing beautiful web
-                            interfaces. Based in Peru
-                        </p>
-                    </div>
-
-                     <div>
-                        <h3 class="home_info-title">
-                            CONTACT
-                        </h3>
-
-                        <p class="home_info-description">
-                            Lima, Peru <br>
-                            chrismayer@email.com <br>
-                            +51 9876543210 <br>
-                        </p>
-                    </div>
-
-                     <div>
-                        <h3 class="home_info-title">
-                            SERVICE 
-                        </h3>
-                        <p class="home_info-description">
-                            Website Design <br>
-                            UI/UX Design <br>
-                            Animation <br>
-                        </p>
-                    </div>
-                </div>
-               </div> 
-            </section>
-            <!--============================HOME INFO 2============================= -->
-            <div class="home_info">
-                <div>
-                    <h3 class="home_info-title">
-                        YEARS OF EXPERIENCE
-                    </h3>
-
-                    <p class="home_info-number">
-                        +08
-                    </p>
-                </div>
-
-                 <div>
-                    <h3 class="home_info-title">
-                        COMPLETED PROJECTS
-                    </h3>
-
-                    <p class="home_info-number">
-                        24+
-                    </p>
-                </div>
-
-                 <div>
-                    <h3 class="home_info-title">
-                        COMPANIES WORKED
-                    </h3>
-
-                    <p class="home_info-number">
-                        07+
-                    </p>
-                </div>
+              <p class="home_info-description">
+                Lima, Peru <br />
+                chrismayer@email.com <br />
+                +51 9876543210 <br />
+              </p>
             </div>
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section_title">Skills</h2>
-                <span class="section_subtitle">My favorite skills</span>
 
-                <div class="skills_container container grid section_border">
-                    <!--============================SKILLS 1============================= -->
-                    <div class="skills_content">
-                        <h3 class="skills_title">
-                            <i class="ri-braces-line"></i> Frontend Developer
-                        </h3>
-
-                        <div class="skills_info">
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/html-1.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">HTML</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/css-3.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">CSS</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/logo-javascript.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">JavaScript</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/react-2.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">React</h3>
-                                <span class="skills_subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/git-icon.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">Git</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--============================SKILLS 2============================= -->
-                    <div class="skills_content">
-                        <h3 class="skills_title">
-                            <i class="ri-pantone-line"></i> Web Designer
-                        </h3>
-
-                        <div class="skills_info">
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/figma-1.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">Figma</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/sketch-2.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">Sketch</h3>
-                                <span class="skills_subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/adobe-xd-1.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">Adobe XD</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/invision.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">InvisionApp</h3>
-                                <span class="skills_subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_blob">
-                                    <img src="img/adobe-photoshop-2.svg" alt="skills image">
-                                </div>
-
-                                <h3 class="skills_name">Photoshop</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section_title">Qualification</h2>
-                <span class="section_subtitle">Experience & education</span>
-
-                <div class="qualification_container container grid section_border">
-                    <!--==================== QUALIFICATION 1====================-->
-                    <div class="qualification_content">
-                        <h3 class="qualification_title">
-                            <i class="ri-pencil-ruler-2-line"></i> Education
-                        </h3>
-
-                        <div class="qualification_info">
-                            <div>
-                                <h3 class="qualification_name">
-                                    Master in Web Developer
-                                </h3>
-
-                                <span class="qualification_country">Peru - University</span>
-                                <span class="qualification_year">2014 - 2019</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_name">
-                                    UI/UX Design
-                                </h3>
-
-                                <span class="qualification_country">Institute - Spain</span>
-                                <span class="qualification_year">2017 - 2019</span>
-                            </div>
-
-                              <div>
-                                <h3 class="qualification_name">
-                                    Computer Engineer
-                                </h3>
-
-                                <span class="qualification_country">Institute - Peru</span>
-                                <span class="qualification_year">2019 - 2022</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION 2====================-->
-                    <div class="qualification_content">
-                        <h3 class="qualification_title">
-                            <i class="ri-building-line"></i> Work
-                        </h3>
-
-                        <div class="qualification_info">
-                            <div>
-                                <h3 class="qualification_name">
-                                    Frontend Developer
-                                </h3>
-
-                                <span class="qualification_country">Adobe - Spain</span>
-                                <span class="qualification_year">2014 - 2019</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_name">
-                                    Software Engineer
-                                </h3>
-
-                                <span class="qualification_country">Mirosoft - Spain</span>
-                                <span class="qualification_year">2018 - 2020</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_name">
-                                    Graphic Designer
-                                </h3>
-
-                                <span class="qualification_country">Figma - Peru</span>
-                                <span class="qualification_year">2020 - Present</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="img/shape-circle.svg" alt="qualification image" class = "qualification_img">
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-               <h2 class="section_title">Services</h2>
-                <span class="section_subtitle">What i offer</span>
-
-                <div class="services_container container grid section_border">
-                    <div class="services_card">
-                        <i class="ri-layout-4-line"></i>
-
-                        <h2 class="services_title">
-                            UI/UX <br>
-                            Designer
-                        </h2>
-
-                        <p class="services_description">
-                            Service that provides the best quality and at
-                            the request of the client, with professional
-                            work and customer support.
-                        </p>
-
-                        <div class="services_border"></div>
-                    </div>
-
-                    <div class="services_card">
-                        <i class="ri-code-line"></i>
-
-                        <h2 class="services_title">
-                            Website <br>
-                            Design
-                        </h2>
-
-                        <p class="services_description">
-                            Service that provides the best quality and at
-                            the request of the client, with professional
-                            work and customer support.
-                        </p>
-
-                        <div class="services_border"></div>
-                    </div>
-
-                    <div class="services_card">
-                        <i class="ri-quill-pen-line"></i>
-
-                        <h2 class="services_title">
-                            Digital <br>
-                            Animator
-                        </h2>
-
-                        <p class="services_description">
-                            Service that provides the best quality and at
-                            the request of the client, with professional
-                            work and customer support.
-                        </p>
-
-                        <div class="services_border"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section_title">Projects</h2>
-                <span class="section_subtitle">Most recent work</span>
-
-                <div class="container section_border">
-                    <div class="projects_container swiper">
-                        <div class="swiper-wrapper">
-                            <!--==================== PROJECT 1====================-->
-                            <div class="projects_content" swiper-slide>
-                                <img src="img/project1.jpg" alt="projects image" class="projects_img">
-
-                                <div>
-                                    <span class="projects_subtitle">Web</span>
-                                    <h1 class="projects_title">Modern Website</h1>
-
-                                    <a href="#" class="projects_button">
-                                        <i class="ri-arrow-right-line"></i> View demo
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECT 2====================-->
-                            <div class="projects_content" swiper-slide>
-                                <img src="img/project2.jpg" alt="projects image" class="projects_img">
-
-                                <div>
-                                    <span class="projects_subtitle">Web</span>
-                                    <h1 class="projects_title">ECommerce Store</h1>
-
-                                    <a href="#" class="projects_button">
-                                        <i class="ri-arrow-right-line"></i> View demo
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECT 3====================-->
-                            <div class="projects_content" swiper-slide>
-                                <img src="img/project3.jpg" alt="projects image" class="projects_img">
-
-                                <div>
-                                    <span class="projects_subtitle">Design</span>
-                                    <h1 class="projects_title">Application Design</h1>
-
-                                    <a href="#" class="projects_button">
-                                        <i class="ri-arrow-right-line"></i> View demo
-                                    </a>
-                                </div>
-                            </div>
-
-
-                            <!--==================== PROJECT 4====================-->
-                            <div class="projects_content" swiper-slide>
-                                <img src="img/project4.jpg" alt="projects image" class="projects_img">
-
-                                <div>
-                                    <span class="projects_subtitle">Animation</span>
-                                    <h1 class="projects_title">Animation Prototypes</h1>
-
-                                    <a href="#" class="projects_button">
-                                        <i class="ri-arrow-right-line"></i> View demo
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-line"></i>
-                        </div>
-                        <!-- Swiper pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                <h2 class="section_title">Testimonial</h2>
-                <span class="section_subtitle">My client saying</span>
-
-                <div class="container section_border">
-                    <div class="testimonial_container swiper">
-                        <div class="swiper-wrapper">
-                            <!--==================== TESTIMONIAL 1====================-->
-                            <div class="testimonial_content swiper-slide">
-                                <p class="testimonial_description">
-                                    "Working with Chris is to give a good
-                                    impression, I carry out my project at a good
-                                    cost, with excellent quality and attention.
-                                    Great service and recommended."
-                                </p>
-
-                                <div>
-                                    <h3 class="testimonial_name">Klay Harris</h3>
-                                    <span class="testimonial_subtitle">Client</span>
-                                </div>
-                            </div>
-
-                            <!--==================== TESTIMONIAL 2====================-->
-                            <div class="testimonial_content swiper-slide">
-                                <p class="testimonial_description">
-                                    "Working with Chris is to give a good
-                                    impression, I carry out my project at a good
-                                    cost, with excellent quality and attention.
-                                    Great service and recommended."
-                                </p>
-
-                                <div>
-                                    <h3 class="testimonial_name">Mary Lens</h3>
-                                    <span class="testimonial_subtitle">Client</span>
-                                </div>
-                            </div>
-
-                            <!--==================== TESTIMONIAL 3====================-->
-                            <div class="testimonial_content swiper-slide">
-                                <p class="testimonial_description">
-                                    "Working with Chris is to give a good
-                                    impression, I carry out my project at a good
-                                    cost, with excellent quality and attention.
-                                    Great service and recommended."
-                                </p>
-
-                                <div>
-                                    <h3 class="testimonial_name">Anna Chel</h3>
-                                    <span class="testimonial_subtitle">Client</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </div>
-
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-line"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="img/shape-wawes.svg" alt="testimonial image" class="testimonial_img">
-            </section>
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section_title">Contact Me</h2>
-                <span class="section_subtitle">Get in touch</span>
-
-                <div class="contact_container container grid section_border">
-                    <div class="contact_content">
-                        <h3 class="contact_title">
-                            <i class="ri-chat-3-line"></i> Talk to me
-                        </h3>
-
-                        <div class="contact_info">
-                            <div class="contact_data">
-                                <span class="contact_data-title">Email</span>
-                                <span class="contact_data-info">chrismayer@email.com</span>
-                            </div>
-
-                            <div class="contact_data">
-                                <span class="contact_data-title">Whatsapp</span>
-                                <span class="contact_data-info">+51 9876543210</span>
-                                <!-- Insert a real number plus country code -->
-                                <a href="https://api.whatsapp.com/send?phone=5519876543210&text=Hello, more information!" target="#" class="contact_button">
-                                    Write me <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact_data">
-                                <span class="contact_data-title">Messenger</span>
-                                <span class="contact_data-info">@chris.fb123</span>
-                                <!-- Insert your brand name or profile -->
-                                <a href="https://m.me/bedimcode" target="#" class="contact_button">
-                                    Write me <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact_content">
-                        <h3 class="contact_title">
-                            <i class="ri-send-plane-line"></i> Write me your project
-                        </h3>
-
-                        <form action="" class="contact_form" id="contact-form">
-                            <div class="contact_form-div">
-                                <label class="contact_form-tag">Names</label>
-                                <input type="text" name="user_name" required placeholder="Write your name" class="contact_form-input" id="contact-name">
-                            </div>
-
-                            <div class="contact_form-div">
-                                <label class="contact_form-tag">Mail</label>
-                                <input type="email" name="user_email" required placeholder="Write your email" class="contact_form-input" id="contact-email">
-                            </div>
-
-                            <div class="contact_form-div contact_form-area">
-                                <label class="contact_form-tag">Project</label>
-                                <textarea name="user-project" placeholder="Write your project" id="contact-project" class="contact_form-input"></textarea>
-                            </div>
-
-                            <p class="contact_message" id="contact-message"></p>
-
-                            <button type="submit" class="contact_button">
-                                Submit <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer_container container">
-                <h1 class="footer_title">Chris</h1>
-                <p>Frontend Developer</p>
-
-                <ul class="footer_list">
-                    <li>
-                        <a href="#home" class="footer_link">Home</a>
-                    </li>
-
-                     <li>
-                        <a href="#skills" class="footer_link">Skills</a>
-                    </li>
-
-                     <li>
-                        <a href="#projects" class="footer_link">Projects</a>
-                    </li>
-                </ul>
-
-                <ul class="footer_social">
-                    <a href="https://www.linkedin.com/" target="#" title="linkedin" class="footer_social-link">
-                        <i class="ri-linkedin-box-line"></i> 
-                    </a>
-
-                     <a href="https://github.com/" target="#" title="github" class="footer_social-link">
-                        <i class="ri-github-line"></i>
-                    </a>
-
-                     <a href="https://dribbble.com/" target="#" title="dribbble" class="footer_social-link">
-                        <i class="ri-dribbble-line"></i>
-                    </a>
-                </ul>
-
-                <span class="footer_copy">
-                    &#169; Copyright Bedimcode. All rights reserved
-                </span>
+            <div>
+              <h3 class="home_info-title">SERVICE</h3>
+              <p class="home_info-description">
+                Website Design <br />
+                UI/UX Design <br />
+                Animation <br />
+              </p>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
+      <!--============================HOME INFO 2============================= -->
+      <div class="home_info">
+        <div>
+          <h3 class="home_info-title">YEARS OF EXPERIENCE</h3>
 
+          <p class="home_info-number">+08</p>
+        </div>
 
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scrollup" title="scrollup">
-            <i class="ri-arrow-up-line"></i>
-        </a>
+        <div>
+          <h3 class="home_info-title">COMPLETED PROJECTS</h3>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <!--<script src="js/scrollreveal.min.js"></script>-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!--=============== SWIPER JS ===============-->
-        <!--<script src="js/swiper-bundle.min.js"></script>-->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+          <p class="home_info-number">24+</p>
+        </div>
+
+        <div>
+          <h3 class="home_info-title">COMPANIES WORKED</h3>
+
+          <p class="home_info-number">07+</p>
+        </div>
+      </div>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section_title">Skills</h2>
+        <span class="section_subtitle">My favorite skills</span>
+
+        <div class="skills_container container grid section_border">
+          <!--============================SKILLS 1============================= -->
+          <div class="skills_content">
+            <h3 class="skills_title">
+              <i class="ri-braces-line"></i> Frontend Developer
+            </h3>
+
+            <div class="skills_info">
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/html-1.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">HTML</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/css-3.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">CSS</h3>
+                <span class="skills_subtitle">Advanced</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/logo-javascript.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">JavaScript</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/react-2.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">React</h3>
+                <span class="skills_subtitle">Basic</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/git-icon.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">Git</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+          <!--============================SKILLS 2============================= -->
+          <div class="skills_content">
+            <h3 class="skills_title">
+              <i class="ri-pantone-line"></i> Web Designer
+            </h3>
+
+            <div class="skills_info">
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/figma-1.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">Figma</h3>
+                <span class="skills_subtitle">Advanced</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/sketch-2.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">Sketch</h3>
+                <span class="skills_subtitle">Basic</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/adobe-xd-1.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">Adobe XD</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/invision.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">InvisionApp</h3>
+                <span class="skills_subtitle">Basic</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="img/adobe-photoshop-2.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills_name">Photoshop</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section_title">Qualification</h2>
+        <span class="section_subtitle">Experience & education</span>
+
+        <div class="qualification_container container grid section_border">
+          <!--==================== QUALIFICATION 1====================-->
+          <div class="qualification_content">
+            <h3 class="qualification_title">
+              <i class="ri-pencil-ruler-2-line"></i> Education
+            </h3>
+
+            <div class="qualification_info">
+              <div>
+                <h3 class="qualification_name">Master in Web Developer</h3>
+
+                <span class="qualification_country">Peru - University</span>
+                <span class="qualification_year">2014 - 2019</span>
+              </div>
+
+              <div>
+                <h3 class="qualification_name">UI/UX Design</h3>
+
+                <span class="qualification_country">Institute - Spain</span>
+                <span class="qualification_year">2017 - 2019</span>
+              </div>
+
+              <div>
+                <h3 class="qualification_name">Computer Engineer</h3>
+
+                <span class="qualification_country">Institute - Peru</span>
+                <span class="qualification_year">2019 - 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== QUALIFICATION 2====================-->
+          <div class="qualification_content">
+            <h3 class="qualification_title">
+              <i class="ri-building-line"></i> Work
+            </h3>
+
+            <div class="qualification_info">
+              <div>
+                <h3 class="qualification_name">Frontend Developer</h3>
+
+                <span class="qualification_country">Adobe - Spain</span>
+                <span class="qualification_year">2014 - 2019</span>
+              </div>
+
+              <div>
+                <h3 class="qualification_name">Software Engineer</h3>
+
+                <span class="qualification_country">Mirosoft - Spain</span>
+                <span class="qualification_year">2018 - 2020</span>
+              </div>
+
+              <div>
+                <h3 class="qualification_name">Graphic Designer</h3>
+
+                <span class="qualification_country">Figma - Peru</span>
+                <span class="qualification_year">2020 - Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="img/shape-circle.svg"
+          alt="qualification image"
+          class="qualification_img"
         />
+      </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <!--=============== EMAIL JS ===============-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function(){
-                emailjs.init("YeYApmSrnDdFg1Xx2");
-                })();
-        </script>
-        <!--=============== MAIN JS ===============-->
-        <script src="js/main.js"></script>
-    </body>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section_title">Services</h2>
+        <span class="section_subtitle">What i offer</span>
+
+        <div class="services_container container grid section_border">
+          <div class="services_card">
+            <i class="ri-layout-4-line"></i>
+
+            <h2 class="services_title">
+              UI/UX <br />
+              Designer
+            </h2>
+
+            <p class="services_description">
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
+
+            <div class="services_border"></div>
+          </div>
+
+          <div class="services_card">
+            <i class="ri-code-line"></i>
+
+            <h2 class="services_title">
+              Website <br />
+              Design
+            </h2>
+
+            <p class="services_description">
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
+
+            <div class="services_border"></div>
+          </div>
+
+          <div class="services_card">
+            <i class="ri-quill-pen-line"></i>
+
+            <h2 class="services_title">
+              Digital <br />
+              Animator
+            </h2>
+
+            <p class="services_description">
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
+
+            <div class="services_border"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section_title">Projects</h2>
+        <span class="section_subtitle">Most recent work</span>
+
+        <div class="container section_border">
+          <div class="projects_container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== PROJECT 1====================-->
+              <div class="projects_content" swiper-slide>
+                <img
+                  src="img/project1.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+
+                <div>
+                  <span class="projects_subtitle">Web</span>
+                  <h1 class="projects_title">Modern Website</h1>
+
+                  <a href="#" class="projects_button">
+                    <i class="ri-arrow-right-line"></i> View demo
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECT 2====================-->
+              <div class="projects_content" swiper-slide>
+                <img
+                  src="img/project2.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+
+                <div>
+                  <span class="projects_subtitle">Web</span>
+                  <h1 class="projects_title">ECommerce Store</h1>
+
+                  <a href="#" class="projects_button">
+                    <i class="ri-arrow-right-line"></i> View demo
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECT 3====================-->
+              <div class="projects_content" swiper-slide>
+                <img
+                  src="img/project3.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+
+                <div>
+                  <span class="projects_subtitle">Design</span>
+                  <h1 class="projects_title">Application Design</h1>
+
+                  <a href="#" class="projects_button">
+                    <i class="ri-arrow-right-line"></i> View demo
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECT 4====================-->
+              <div class="projects_content" swiper-slide>
+                <img
+                  src="img/project4.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+
+                <div>
+                  <span class="projects_subtitle">Animation</span>
+                  <h1 class="projects_title">Animation Prototypes</h1>
+
+                  <a href="#" class="projects_button">
+                    <i class="ri-arrow-right-line"></i> View demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section">
+        <h2 class="section_title">Testimonial</h2>
+        <span class="section_subtitle">My client saying</span>
+
+        <div class="container section_border">
+          <div class="testimonial_container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== TESTIMONIAL 1====================-->
+              <div class="testimonial_content swiper-slide">
+                <p class="testimonial_description">
+                  "Working with Chris is to give a good impression, I carry out
+                  my project at a good cost, with excellent quality and
+                  attention. Great service and recommended."
+                </p>
+
+                <div>
+                  <h3 class="testimonial_name">Klay Harris</h3>
+                  <span class="testimonial_subtitle">Client</span>
+                </div>
+              </div>
+
+              <!--==================== TESTIMONIAL 2====================-->
+              <div class="testimonial_content swiper-slide">
+                <p class="testimonial_description">
+                  "Working with Chris is to give a good impression, I carry out
+                  my project at a good cost, with excellent quality and
+                  attention. Great service and recommended."
+                </p>
+
+                <div>
+                  <h3 class="testimonial_name">Mary Lens</h3>
+                  <span class="testimonial_subtitle">Client</span>
+                </div>
+              </div>
+
+              <!--==================== TESTIMONIAL 3====================-->
+              <div class="testimonial_content swiper-slide">
+                <p class="testimonial_description">
+                  "Working with Chris is to give a good impression, I carry out
+                  my project at a good cost, with excellent quality and
+                  attention. Great service and recommended."
+                </p>
+
+                <div>
+                  <h3 class="testimonial_name">Anna Chel</h3>
+                  <span class="testimonial_subtitle">Client</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="img/shape-wawes.svg"
+          alt="testimonial image"
+          class="testimonial_img"
+        />
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle">Get in touch</span>
+
+        <div class="contact_container container grid section_border">
+          <div class="contact_content">
+            <h3 class="contact_title">
+              <i class="ri-chat-3-line"></i> Talk to me
+            </h3>
+
+            <div class="contact_info">
+              <div class="contact_data">
+                <span class="contact_data-title">Email</span>
+                <span class="contact_data-info">chrismayer@email.com</span>
+              </div>
+
+              <div class="contact_data">
+                <span class="contact_data-title">Whatsapp</span>
+                <span class="contact_data-info">+51 9876543210</span>
+                <!-- Insert a real number plus country code -->
+                <a
+                  href="https://api.whatsapp.com/send?phone=5519876543210&text=Hello, more information!"
+                  target="#"
+                  class="contact_button"
+                >
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+
+              <div class="contact_data">
+                <span class="contact_data-title">Messenger</span>
+                <span class="contact_data-info">@chris.fb123</span>
+                <!-- Insert your brand name or profile -->
+                <a
+                  href="https://m.me/bedimcode"
+                  target="#"
+                  class="contact_button"
+                >
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact_content">
+            <h3 class="contact_title">
+              <i class="ri-send-plane-line"></i> Write me your project
+            </h3>
+
+            <form action="" class="contact_form" id="contact-form">
+              <div class="contact_form-div">
+                <label class="contact_form-tag">Names</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Write your name"
+                  class="contact_form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact_form-div">
+                <label class="contact_form-tag">Mail</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder="Write your email"
+                  class="contact_form-input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact_form-div contact_form-area">
+                <label class="contact_form-tag">Project</label>
+                <textarea
+                  name="user-project"
+                  placeholder="Write your project"
+                  id="contact-project"
+                  class="contact_form-input"
+                ></textarea>
+              </div>
+
+              <p class="contact_message" id="contact-message"></p>
+
+              <button type="submit" class="contact_button">
+                Submit <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer_container container">
+        <h1 class="footer_title">Chris</h1>
+        <p>Frontend Developer</p>
+
+        <ul class="footer_list">
+          <li>
+            <a href="#home" class="footer_link">Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="footer_link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="footer_link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer_social">
+          <a
+            href="https://www.linkedin.com/"
+            target="#"
+            title="linkedin"
+            class="footer_social-link"
+          >
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+
+          <a
+            href="https://github.com/"
+            target="#"
+            title="github"
+            class="footer_social-link"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+
+          <a
+            href="https://dribbble.com/"
+            target="#"
+            title="dribbble"
+            class="footer_social-link"
+          >
+            <i class="ri-dribbble-line"></i>
+          </a>
+        </ul>
+
+        <span class="footer_copy">
+          &#169; Copyright Bedimcode. All rights reserved
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scrollup" title="scrollup">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <!--<script src="js/scrollreveal.min.js"></script>-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--=============== SWIPER JS ===============-->
+    <!--<script src="js/swiper-bundle.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YeYApmSrnDdFg1Xx2");
+      })();
+    </script>
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
